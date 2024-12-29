@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>EasyAbp.EShop.Plugins.ProductTag</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="3.0.5" />
+    <ProjectReference Include="..\EasyAbp.EShop.Plugins.ProductTag.Application.Contracts\EasyAbp.EShop.Plugins.ProductTag.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>EasyAbp.EShop.Plugins.ProductTag</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\EasyAbp.EShop.Plugins.ProductTag.Application\EasyAbp.EShop.Plugins.ProductTag.Application.csproj" />
+    <ProjectReference Include="..\EasyAbp.EShop.Plugins.ProductTag.Domain.Tests\EasyAbp.EShop.Plugins.ProductTag.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+{
+  "culture": "sl",
+  "texts": {
+    "ManageYourProfile": "Upravljajte svojim profilom",
+    "Menu:Tag": "MenuTag",
+    "Tag": "Tag",
+    "TagTenantId": "TagTenantId",
+    "TagStoreId": "TagStoreId",
+    "TagDisplayName": "TagDisplayName",
+    "TagDescription": "TagDescription",
+    "TagMediaResources": "TagMediaResources",
+    "CreateTag": "CreateTag",
+    "EditTag": "EditTag",
+    "TagDeletionConfirmationMessage": "Are you sure to delete the tag {0}?",
+    "Permission:ProductTag": "ProductTag",
+    "Permission:Tag": "Tag",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Permission:CrossStore": "CrossStore"
+  }
+}

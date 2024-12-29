@@ -1,0 +1,61 @@
+@page
+@using EasyAbp.EShop.Plugins.ProductTag.Localization
+@using EasyAbp.EShop.Plugins.ProductTag.Web.Menus
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Layout
+@model EasyAbp.EShop.Plugins.ProductTag.Web.Pages.EShop.Products.Tags.Tag.IndexModel
+@inject IPageLayout PageLayout
+@inject IHtmlLocalizer<ProductTagResource> L
+@{
+    PageLayout.Content.Title = L["Tag"].Value;
+    PageLayout.Content.BreadCrumb.Add(L["Menu:Tag"].Value);
+    PageLayout.Content.MenuItemName = ProductTagMenus.Tag;
+}
+
+@section scripts
+{
+    <abp-script src="/Pages/EShop/Products/Tags/Tag/index.js" />
+}
+@section styles
+{
+    <abp-style src="/Pages/EShop/Products/Tags/Tag/index.css"/>
+}
+<script>
+    let storeId = '@Model.StoreId'
+</script>
+
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Tag"] - @Model.StoreName</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                <abp-button id="NewTagButton"
+                            text="@L["CreateTag"].Value"
+                            icon="plus"
+                            button-type="Primary" />
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="TagTable" class="nowrap">
+            <thead>
+            <tr>
+                <th>@L["Actions"]</th>
+                <th>Id</th>
+                @*<th>@L["TagStoreId"]</th>*@
+                <th>@L["TagDescription"]</th>
+                <th>@L["TagMediaResources"]</th>
+                @*<th>@L["TagIsHidden"]</th>*@
+                <th>@L["TagDisplayName"]</th>
+                @*<th>@L["TagCode"]</th>*@
+                @*<th>@L["TagLevel"]</th>*@
+                <th>@L["TagParentId"]</th>
+                @*<th>@L["TagParent"]</th>
+                <th>@L["TagChildren"]</th>*@
+            </tr>
+            </thead>
+        </abp-table>
+    </abp-card-body>
+</abp-card>

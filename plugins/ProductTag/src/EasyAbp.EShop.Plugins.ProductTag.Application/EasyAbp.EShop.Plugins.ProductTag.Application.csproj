@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>EasyAbp.EShop.Plugins.ProductTag</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="3.0.5" />
+    <ProjectReference Include="..\..\..\..\modules\EasyAbp.EShop.Products\src\EasyAbp.EShop.Products.Application.Contracts\EasyAbp.EShop.Products.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\EasyAbp.EShop.Products\src\EasyAbp.EShop.Products.Domain\EasyAbp.EShop.Products.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\EasyAbp.EShop.Stores\src\EasyAbp.EShop.Stores.Application\EasyAbp.EShop.Stores.Application.csproj" />
+    <ProjectReference Include="..\EasyAbp.EShop.Plugins.ProductTag.Application.Contracts\EasyAbp.EShop.Plugins.ProductTag.Application.Contracts.csproj" />
+    <ProjectReference Include="..\EasyAbp.EShop.Plugins.ProductTag.Domain\EasyAbp.EShop.Plugins.ProductTag.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

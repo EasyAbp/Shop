@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>EasyAbp.EShop.Plugins.ProductTag</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="3.0.5" />
+    <ProjectReference Include="..\EasyAbp.EShop.Plugins.ProductTag.Domain.Shared\EasyAbp.EShop.Plugins.ProductTag.Domain.Shared.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+      <ProjectReference Include="..\..\..\..\modules\EasyAbp.EShop.Stores\src\EasyAbp.EShop.Stores.Domain.Shared\EasyAbp.EShop.Stores.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

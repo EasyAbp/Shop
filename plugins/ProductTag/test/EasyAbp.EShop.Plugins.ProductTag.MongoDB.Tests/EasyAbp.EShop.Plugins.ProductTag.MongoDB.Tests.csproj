@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>EasyAbp.EShop.Plugins.ProductTag</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="Mongo2Go" Version="2.2.12" />
+    <ProjectReference Include="..\..\src\EasyAbp.EShop.Plugins.ProductTag.MongoDB\EasyAbp.EShop.Plugins.ProductTag.MongoDB.csproj" />
+    <ProjectReference Include="..\EasyAbp.EShop.Plugins.ProductTag.TestBase\EasyAbp.EShop.Plugins.ProductTag.TestBase.csproj" />
+  </ItemGroup>
+
+</Project>

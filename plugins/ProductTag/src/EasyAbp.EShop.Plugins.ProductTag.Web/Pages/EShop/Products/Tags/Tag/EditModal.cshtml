@@ -1,0 +1,19 @@
+@page
+@using EasyAbp.EShop.Plugins.ProductTag.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal;
+@inject IHtmlLocalizer<ProductTagResource> L
+@model EasyAbp.EShop.Plugins.ProductTag.Web.Pages.EShop.Products.Tags.Tag.EditModalModel
+@{
+    Layout = null;
+}
+<abp-dynamic-form abp-model="ViewModel" data-ajaxForm="true" asp-page="EditModal">
+    <abp-modal>
+        <abp-modal-header title="@L["EditTag"].Value"></abp-modal-header>
+        <abp-modal-body>
+            <abp-input asp-for="Id" />
+            <abp-form-content />
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</abp-dynamic-form>

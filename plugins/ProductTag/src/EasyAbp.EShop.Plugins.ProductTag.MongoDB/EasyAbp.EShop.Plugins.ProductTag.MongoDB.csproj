@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>EasyAbp.EShop.Plugins.ProductTag</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.MongoDB" Version="3.0.5" />
+    <ProjectReference Include="..\EasyAbp.EShop.Plugins.ProductTag.Domain\EasyAbp.EShop.Plugins.ProductTag.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
